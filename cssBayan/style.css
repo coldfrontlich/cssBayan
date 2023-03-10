@@ -1,7 +1,6 @@
 body {
   background-color: rgb(250, 242, 232);
   font-family: Verdana, sans-serif;
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -9,7 +8,39 @@ body {
 .accordion {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
 }
+
+.accordion-title {
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.accordion-item {
+  border-bottom: 2px solid lightgray;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-content {
+  display: none;
+  text-align: center;
+}
+
+.accordion-image {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.accordion-input {
+  cursor: pointer;
+  margin-left: 20rem;
+}
+
+.accordion-input:checked + .accordion-content {
+  display: block;
+}
+
+
 
