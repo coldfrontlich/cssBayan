@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(250, 242, 232);
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* accordion */
+.accordion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
