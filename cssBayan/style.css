@@ -50,6 +50,8 @@ body {
   width: 50rem;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion-item-last {
@@ -66,6 +68,7 @@ body {
 .accordion-image {
   padding-top: 2rem;
   padding-bottom: 2rem;
+
 }
 
 .accordion-input {
@@ -81,6 +84,11 @@ body {
 .accordion-input:checked + .accordion-title {
   color: rgb(33, 30, 30);
 }
+
+.accordion-block-icon {
+  padding-top: 1rem;
+}
+
 
 
 
