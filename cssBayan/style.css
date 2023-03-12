@@ -13,10 +13,11 @@ body {
   width: 50rem;
   transition: all .5s;
 }
-
-.accordion:hover label{
-  color: rgb(33, 30, 30);
-  transition: all .5s;
+@media (hover: hover) {
+  .accordion:hover label{
+    color: rgb(33, 30, 30);
+    transition: all .5s;
+  }
 }
 
 .accordion-header {
@@ -35,6 +36,7 @@ body {
 
 .accordion-text {
   cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 
 .accordion-title {
@@ -62,13 +64,13 @@ body {
   display: none;
   text-align: center;
   opacity: 0;
-  transition: .5s;
+  transition: all .5s ease-in-out;
 }
 
 .accordion-image {
   padding-top: 2rem;
   padding-bottom: 2rem;
-
+  transition: all .5s ease-in-out;
 }
 
 .accordion-input {
@@ -89,6 +91,35 @@ body {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 51.25rem) {
+  .accordion-item {
+    width: 35rem;
+  }
+  .accordion-header {
+    width: 35rem;
+  }
+  .accordion-header-text {
+    font-size: 1.5rem;
+  }
+  .accordion-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .accordion-item {
+    width: 30rem;
+  }
+  .accordion-header {
+    width: 30rem;
+  }
+  .accordion-header-text {
+    font-size: 1.2rem;
+  }
+  .accordion-title {
+    font-size: 1rem;
+  }
+}
 
 
 
